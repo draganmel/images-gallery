@@ -15,7 +15,7 @@ const App = () => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    console.log(word);
+    //console.log(word);
     fetch(
       `https://api.unsplash.com/photos/random/?query=${word}&client_id=${UNSPLASH_KEY}`
     )
