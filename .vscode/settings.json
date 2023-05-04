@@ -5,8 +5,17 @@
         "javascript",
         "javascriptreact"
     ],
+    
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "python.analysis.typeCheckingMode": "basic"
+    "python.pythonPath": "api/.venv/bin/Scripts/python",
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestyleArgs":["--max-line-lenght=88"],
+    "python.linting.pylintEnabled": true,
+    "python.formatting.provider": "none",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
 }
