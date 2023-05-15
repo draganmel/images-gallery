@@ -45,7 +45,6 @@ def new_image():
     dict: A dictionary representing the image metadata.
     """
     word = request.args.get("query")
-
     headers = {"Accept-Version": "v1", "Authorization": "Client-ID " + UNSPLASH_KEY}
     params = {"query": word}
     response = requests.get(
